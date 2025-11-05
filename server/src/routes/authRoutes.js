@@ -9,8 +9,8 @@ router.post('/login',login);
 router.post('/logout',logout)
 router.post('/onboarding',protect,onboard);
 
-
-
-
+router.get('/me',protect,(req,res)=>{
+    res.status(200).json({user:req.user});
+});
 
 export default router;
