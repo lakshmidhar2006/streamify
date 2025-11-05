@@ -1,7 +1,7 @@
 import { User } from '../models/user.js';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import { upsertnewStreamUser } from '../models/stream.js';
+import { upsertnewStreamUser } from '../lib/stream.js';
 
 
 export async function signup(req,res){
